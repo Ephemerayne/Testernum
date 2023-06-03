@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Testernum"
+include ':app'
+include ':app:feature-home'
+include ':app:feature-home:compose'
+include ':app:feature-home:impl'
+include ':app:common'
+include ':app:feature-home:api'
+include ':app:feature-test-creator'
+include ':app:feature-test-creator:compose'
