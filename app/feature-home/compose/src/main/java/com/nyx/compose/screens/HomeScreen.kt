@@ -1,21 +1,16 @@
 package com.nyx.compose.screens
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.size
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.adeo.kviewmodel.compose.observeAsState
 import com.nyx.api.navigation.HomeScreenNavigation
-import com.nyx.impl.models.HomeViewEvent
-import com.nyx.common.viewModel.observeAction
 import com.nyx.common.viewModel.rememberEvent
 import com.nyx.compose.navigation.navigation
 import com.nyx.impl.HomeViewModel
-import com.nyx.impl.models.HomeViewAction
+import com.nyx.impl.models.HomeViewEvent
 
 @Composable
 fun HomeScreen(
@@ -41,8 +36,8 @@ private fun HomeView(
 ) {
     Column() {
         Text(text)
-        Button(modifier = Modifier.size(200.dp), onClick = onNextScreenButtonClick) {
-            Text(text = "Go to next screen")
+        Button(onClick = onNextScreenButtonClick) {
+            Text(text = "Go to test creator")
         }
     }
 }

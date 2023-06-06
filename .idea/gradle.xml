@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/app/feature-home/impl" />
             <option value="$PROJECT_DIR$/app/feature-test-creator" />
             <option value="$PROJECT_DIR$/app/feature-test-creator/compose" />
+            <option value="$PROJECT_DIR$/app/feature-test-creator/impl" />
           </set>
         </option>
       </GradleProjectSettings>
