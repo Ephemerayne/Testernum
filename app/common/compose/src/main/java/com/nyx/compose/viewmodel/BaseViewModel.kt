@@ -1,4 +1,4 @@
-package com.nyx.common.viewModel
+package com.nyx.compose.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

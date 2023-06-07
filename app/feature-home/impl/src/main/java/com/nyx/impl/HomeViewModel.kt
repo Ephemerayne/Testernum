@@ -1,9 +1,9 @@
 package com.nyx.impl
 
-import com.nyx.impl.models.HomeViewEvent
-import com.nyx.common.viewModel.BaseViewModel
-import com.nyx.impl.models.HomeViewState
+import com.nyx.compose.viewmodel.BaseViewModel
 import com.nyx.impl.models.HomeViewAction
+import com.nyx.impl.models.HomeViewEvent
+import com.nyx.impl.models.HomeViewState
 
 class HomeViewModel: BaseViewModel<HomeViewState, HomeViewAction, HomeViewEvent>(
     initialState = HomeViewState()

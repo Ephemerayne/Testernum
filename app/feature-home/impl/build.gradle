@@ -32,7 +32,7 @@ android {
 
 dependencies {
     // Modules
-    implementation(project(":app:common"))
+    implementation(project(":app:common:compose"))
 
     // AndroidX
     implementation "androidx.core:core-ktx:$core_version"

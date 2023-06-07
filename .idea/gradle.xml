@@ -11,7 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app/common" />
+            <option value="$PROJECT_DIR$/app/common/compose" />
             <option value="$PROJECT_DIR$/app/feature-home" />
             <option value="$PROJECT_DIR$/app/feature-home/api" />
             <option value="$PROJECT_DIR$/app/feature-home/compose" />

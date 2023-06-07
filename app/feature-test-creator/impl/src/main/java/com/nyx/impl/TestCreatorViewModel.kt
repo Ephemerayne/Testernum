@@ -1,6 +1,6 @@
 package com.nyx.impl
 
-import com.nyx.common.viewModel.BaseViewModel
+import com.nyx.compose.viewmodel.BaseViewModel
 import com.nyx.impl.models.TestCreatorViewAction
 import com.nyx.impl.models.TestCreatorViewEvent
 import com.nyx.impl.models.TestCreatorViewState

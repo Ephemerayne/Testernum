@@ -7,8 +7,8 @@ import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.adeo.kviewmodel.compose.observeAsState
 import com.nyx.api.navigation.HomeScreenNavigation
-import com.nyx.common.viewModel.rememberEvent
 import com.nyx.compose.navigation.navigation
+import com.nyx.compose.viewmodel.rememberEvent
 import com.nyx.impl.HomeViewModel
 import com.nyx.impl.models.HomeViewEvent
 

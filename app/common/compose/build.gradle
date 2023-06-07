@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.nyx.common'
+    namespace 'com.nyx.compose'
     compileSdk 33
 
     defaultConfig {

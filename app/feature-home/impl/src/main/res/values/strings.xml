@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_new_test_title">Создание нового теста</string>
+    <string name="question_text_field_placeholder">Введите вопрос</string>
+    <string name="previous_question_button_text">Предыдущий вопрос</string>
+    <string name="next_question_button_text">Следующий вопрос</string>
+</resources>
