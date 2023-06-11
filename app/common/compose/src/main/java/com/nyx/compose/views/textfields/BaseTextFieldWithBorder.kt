@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.sp
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun BaseTextFieldWithBorder(
+    modifier: Modifier = Modifier,
     message: String,
     placeholder: String,
     focusRequester: FocusRequester,
@@ -84,7 +85,7 @@ fun BaseTextFieldWithBorder(
                 textFieldValueState = it
                 onTextChanged(it.text)
             },
-            modifier = Modifier
+            modifier = modifier
                 .fillMaxSize()
                 .background(fieldColor)
                 .focusRequester(focusRequester)
@@ -97,7 +98,8 @@ fun BaseTextFieldWithBorder(
             minLines = minLines,
             maxLines = maxLines,
             textStyle = textStyle,
-            cursorBrush = SolidColor(cursorColor)
+            cursorBrush = SolidColor(cursorColor),
+            singleLine = isSingleLine
         ) { innerTextField ->
             TextFieldDefaults.TextFieldDecorationBox(
                 value = "",
@@ -105,7 +107,9 @@ fun BaseTextFieldWithBorder(
                     if (input.text.isEmpty()) {
                         Text(
                             text = placeholder,
-                            color = Color.LightGray
+                            color = Color.LightGray,
+                            fontFamily = FontFamily.SansSerif,
+                            fontSize = 14.sp
                         )
                     }
                 },
@@ -119,9 +123,14 @@ fun BaseTextFieldWithBorder(
         }
         if (message.isNotBlank() && isFocused) {
             Image(
-                modifier = Modifier
-                    .padding(top = 8.dp, end = 8.dp)
-                    .align(Alignment.TopEnd)
+                modifier = if (isSingleLine) {
+                    Modifier.align(Alignment.CenterEnd)
+                } else {
+                    Modifier
+                        .padding(top = 8.dp)
+                        .align(Alignment.TopEnd)
+                }
+                    .padding(end = 8.dp)
                     .clickable(onClick = onClearInputClick),
                 imageVector = Icons.Default.Clear,
                 contentDescription = null
